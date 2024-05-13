@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars API App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Your custom CSS file -->
+</head>
+<body>
+    <h1 class="text-center">Star Wars API Application</h1>
+
+<div class="container mt-5">
+    <div class="row justify-content-center"> <!-- Center the row -->
+        <div class="col-md-4 d-flex justify-content-between"> <!-- Make buttons center and space between -->
+            <!-- Buttons for fetching data -->
+            <button class="btn btn-primary" id="fetch-people">Fetch People</button>
+            <button class="btn btn-primary" id="fetch-films">Fetch Films</button>
+            <button class="btn btn-primary" id="fetch-planets">Fetch Planets</button>
+            
+        </div>
+    </div>
+    <div class="row justify-content-center"> <!-- Center the row -->
+        <div class="col-md-8">
+            <!-- Display area for fetched data -->
+            <div id="data-container" class="card-columns"></div>
+            <!-- Pagination section (optional) -->
+            <nav>
+                <ul class="pagination justify-content-center" id="pagination"></ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<footer class="footer mt-auto py-3">
+  <div class="container text-center">
+    <span class="text-muted">© 2024 Star Wars API App. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="main.js"></script> 
+</body>
+</html>
